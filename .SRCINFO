@@ -1,7 +1,7 @@
 pkgbase = python3.13
 	pkgdesc = Python programming language interpreter
 	pkgver = 3.13.0
-	pkgrel = 1
+	pkgrel = 0
 	url = https://www.python.org/
 	arch = i686
 	arch = x86_64
