@@ -192,7 +192,7 @@ _check_tag_latest() {
       tail \
         -n \
           1)"
-  _tag_build="${tag}"
+  _tag_build="${_tag}"
   _tag_current="${_tag_build}"
   _tag_recipe="$(
     recipe-get \
