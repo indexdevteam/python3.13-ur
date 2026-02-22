@@ -245,8 +245,9 @@ package() {
   # Clean-up reference to build directory
   sed \
     -i \
-    "s|$srcdir/${_tarname}:||" \
-    "${pkgdir}/usr/lib/${_pkg}${_pybasever}/config-${_pybasever}-${CARCH}-linux-gnu/Makefile"
+    "s|${srcdir}/${_tarname}:||" \
+    "${pkgdir}/usr/lib/${_pkg}${_pybasever}/config-${_pybasever}-${CARCH}-linux-gnu/Makefile" ||
+  true
   # Add useful scripts FS#46146
   install \
     -vdm755 \
